@@ -1,67 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+				<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+				
+				<title>Frontend Mentor | Huddle landing page with curved sections</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+				<style>
+								.attribution { font-size: 11px; text-align: center; }
+								.attribution a { color: hsl(228, 45%, 44%); }
+        .bg-pale-blue {background: hsl(207, 100%, 98%); }
+        .bg-dark-cyan {background: hsl(192, 100%, 9%); }
+				</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  Try it free
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/logo.svg"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-  Build The Community Your Fans Will Love
+        <div class="collapse navbar-collapse text-right" id="navbarSupportedContent">
+            <button type="button" class="btn btn-outline-primary">Try it Free</button>
+        </div>
+    </nav>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does 
-  your audience. Create connections with your users as you engage in genuine discussion. 
+    <div class="container text-center pt-5 pb-5">
+        <h1 class="mb-3 mt-5">Build The Community Your Fans Will Love</h1>
+        <p class="mb-5">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.<br> Create connections with your users as you engage in genuine discussion. </p>
+        <button type="button" class="btn btn-primary btn-lg mb-5">Get Started For Free</button>
+        <div class="mb-5">
+            <img src="images/screen-mockups.svg" width="80%">
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <img src="images/icon-communities.svg">
+                <h1><b>1.4k+</b></h1>
+                <p>Communities Formed</p>
+            </div>
+            <div class="col-sm">
+                <img src="images/icon-messages.svg">
+                <h1><b>2.7m+</b></h1>
+                <p>Messages Sent</p>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="bg-pale-blue">
+        <div class="container text-left pt-5 pb-5">
+            <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <h2>Grow Together</h2>
+                    <p>Generate meaningful discussions with your audience and build a strong, loyal community.<br>Think of the insightful conversations you miss out on with a feedback form.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/illustration-grow-together.svg" class="img-fluid">
+                </div>
+            </div>    
+        </div>
+    </div>    
+    
+    <div class="container text-left pt-5 pb-5">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/illustration-flowing-conversation.svg" class="img-fluid">
+            </div>
+            <div class="col-sm-6 my-auto">
+                <h2>Flowing Conversations</h2>
+                <p>You wouldn't paginate a conversation in real life, so why do it online?<br> Our threads have just-in-time loading for a more natural flow.</p>
+            </div>
+        </div>    
+    </div>
+    
+    <div class="bg-pale-blue">
+        <div class="container text-left pt-5 pb-5">
+            <div class="row">
+                <div class="col-sm-6 my-auto">
+                    <h2>Your Users</h2>
+                    <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="images/illustration-your-users.svg" class="img-fluid">
+                </div>
+            </div>    
+        </div>
+    </div>
+    
+    
+    <div class="container text-center pt-5 pb-5">
+        <h2>Ready To Build Your Community?</h2>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience.<br> Create connections with your users as you engage in genuine discussion. </p>
+        <button type="button" class="btn btn-primary btn-lg">Get Started For Free</button>
+    </div>
+    
+    <div class="bg-dark-cyan">
+        <div class="container pt-5 pb-5 text-white">
+            <div class="row">
+                <div class="col-sm">
+                    <img src="images/logo.svg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
+                    <p>Phone: +1-543-123-4567</p>
+                    <p>example@huddle.com</p>
+                </div>
+                <div class="col-sm">
+                    <h3>NEWSLETTER</h3>
+                    <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address.</p>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Email Address" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  Get Started For Free
-
-  1.4k+
-  Communities Formed
-
-  2.7m+
-  Messages Sent
-
-  Grow Together
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
-
-  Flowing Conversations
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
-  just-in-time loading for a more natural flow.
-
-  Your Users
-  It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
-  once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
-  vestibulum a, ultrices quis sem.
-  
-  Phone: +1-543-123-4567
-  example@huddle.com
-
-  Newsletter
-  To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
-  send you spam or pass on your email address
-
-  Subscribe
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+    <footer>
+        <p class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Your Name Here</a>.
+        </p>
+    </footer>
 </body>
 </html>
